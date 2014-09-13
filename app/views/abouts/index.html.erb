@@ -2,6 +2,8 @@
 
 <table>
   <tr>
+    <th>Subtitle</th>
+    <th>Description</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +11,8 @@
 
 <% @abouts.each do |about| %>
   <tr>
+    <td><%= about.subtitle %></td>
+    <td><%= about.description %></td>
     <td><%= link_to 'Show', about %></td>
     <td><%= link_to 'Edit', edit_about_path(about) %></td>
     <td><%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %></td>

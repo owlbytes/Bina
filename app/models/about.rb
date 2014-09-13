@@ -1,3 +1,3 @@
 class About < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :description, :subtitle
 end

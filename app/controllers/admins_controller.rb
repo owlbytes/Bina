@@ -3,7 +3,13 @@ class AdminsController < ApplicationController
   # GET /admins.json
   def index
     @admins = Admin.all
-
+    @abouts = About.all
+    @blooms = Bloom.all
+    @blues = Blue.all
+    @figures = Figure.all
+    @torsos = Torso.all
+    @vessels = Vessel.all
+    @paintings = Painting.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @admins }

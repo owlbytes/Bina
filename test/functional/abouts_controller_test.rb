@@ -18,7 +18,7 @@ class AboutsControllerTest < ActionController::TestCase
 
   test "should create about" do
     assert_difference('About.count') do
-      post :create, about: {  }
+      post :create, about: { description: @about.description, subtitle: @about.subtitle }
     end
 
     assert_redirected_to about_path(assigns(:about))
@@ -35,7 +35,7 @@ class AboutsControllerTest < ActionController::TestCase
   end
 
   test "should update about" do
-    put :update, id: @about, about: {  }
+    put :update, id: @about, about: { description: @about.description, subtitle: @about.subtitle }
     assert_redirected_to about_path(assigns(:about))
   end
 

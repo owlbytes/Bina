@@ -1,6 +1,6 @@
-class CreateAbstracts < ActiveRecord::Migration
+class CreatePaintings < ActiveRecord::Migration
   def change
-    create_table :abstracts do |t|
+    create_table :paintings do |t|
       t.string :title
       t.text :description
 

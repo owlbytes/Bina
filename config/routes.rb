@@ -1,4 +1,10 @@
 BinashahartApp::Application.routes.draw do
+  resources :abouts
+
+
+  resources :paintings
+
+
   resources :admins
 
 
