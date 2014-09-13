@@ -1,0 +1,2 @@
+module BluesHelper
+end

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @bloom.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @bloom.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_bloom_path(@bloom) %> |
+<%= link_to 'Back', blooms_path %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @torso.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @torso.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_torso_path(@torso) %> |
+<%= link_to 'Back', torsos_path %>
