@@ -13,6 +13,7 @@
   <tr>
     <td><%= torso.title %></td>
     <td><%= torso.description %></td>
+    <td><%= image_tag torso.image_url %></td>
     <td><%= link_to 'Show', torso %></td>
     <td><%= link_to 'Edit', edit_torso_path(torso) %></td>
     <td><%= link_to 'Destroy', torso, method: :delete, data: { confirm: 'Are you sure?' } %></td>

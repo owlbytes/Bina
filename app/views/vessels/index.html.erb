@@ -12,7 +12,9 @@
 <% @vessels.each do |vessel| %>
   <tr>
     <td><%= vessel.title %></td>
+
     <td><%= vessel.description %></td>
+    <td><%= image_tag vessel.image_url %></td>   
     <td><%= link_to 'Show', vessel %></td>
     <td><%= link_to 'Edit', edit_vessel_path(vessel) %></td>
     <td><%= link_to 'Destroy', vessel, method: :delete, data: { confirm: 'Are you sure?' } %></td>

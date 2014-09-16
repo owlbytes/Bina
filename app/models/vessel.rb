@@ -1,3 +1,5 @@
 class Vessel < ActiveRecord::Base
-  attr_accessible :description, :title
+  attr_accessible :description, :title, :image
+
+  mount_uploader :image, ImageUploader
 end

@@ -13,6 +13,7 @@
   <tr>
     <td><%= painting.title %></td>
     <td><%= painting.description %></td>
+        <td><%= image_tag painting.image_url %></td>
     <td><%= link_to 'Show', painting %></td>
     <td><%= link_to 'Edit', edit_painting_path(painting) %></td>
     <td><%= link_to 'Destroy', painting, method: :delete, data: { confirm: 'Are you sure?' } %></td>

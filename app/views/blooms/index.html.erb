@@ -13,6 +13,7 @@
   <tr>
     <td><%= bloom.title %></td>
     <td><%= bloom.description %></td>
+    <td><%= image_tag bloom.image_url %></td>
     <td><%= link_to 'Show', bloom %></td>
     <td><%= link_to 'Edit', edit_bloom_path(bloom) %></td>
     <td><%= link_to 'Destroy', bloom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
