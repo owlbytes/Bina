@@ -10,9 +10,15 @@
 
 
 <h2>About Section</h2>
+
+<%= link_to 'View', abouts_path %>,
+<%= link_to 'New', new_about_path %>,  
+
+
 <% @abouts.each do |about| %>
   <%= link_to 'View About Page', about %>, 
-  <%= link_to 'Edit About Page', edit_about_path(about) %>, 
+  <%= link_to 'Edit About Page', edit_about_path(about) %>,
+
 <% end %>
 
 

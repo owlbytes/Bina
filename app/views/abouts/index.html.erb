@@ -1,28 +1,22 @@
-<h1>Listing abouts</h1>
+<div class="container">
+  <% @abouts.each do |about| %>
+    <br>
+    <br>
+    <br>
+    <div class="sixteen columns">
+      <h3 id="AboutSubtitle"><%= about.subtitle %></h3>
+      
+      <br>
+      <br>
+      <br>
+      <div class="seven columns alpha" id="AboutImage">
+        <%= image_tag about.image %>
+      </div>
 
+      <div class="nine columns omega">
+        <%= about.description %>
+      </div>
 
-
-<table>
-  <tr>
-    <th>Subtitle</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @abouts.each do |about| %>
-  <tr>
-    <td><%= about.subtitle %></td>
-    <%= image_tag about.image_url %>
-    <td><%= about.description %></td>
-    <td><%= link_to 'Show', about %></td>
-    <td><%= link_to 'Edit', edit_about_path(about) %></td>
-    <td><%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New About', new_about_path %>
+    </div>
+  <% end %>
+</div>
