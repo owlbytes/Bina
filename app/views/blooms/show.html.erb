@@ -2,9 +2,10 @@
 <div class="container">
   <div class="sixteen columns" id="work_show">
     <%= image_tag @bloom.image_url %>
-    <br>
-    <h4><%= @bloom.title %></h4>
-    <p><%= @bloom.description %></p>
+    <div id="work_show_description">
+      <h4><%= @bloom.title %></h4>
+      <p><%= @bloom.description %></p>
+    </div>
   </div>
 </div>
 

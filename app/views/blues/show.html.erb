@@ -1,16 +1,10 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="sixteen columns" id="work_show">
+    <%= image_tag @blue.image_url %>
+    <div id="work_show_description">
+      <h4><%= @blue.title %></h4>
+      <p><%= @blue.description %></p>
+    </div>
+  </div>
+</div>
 
-<%= image_tag @blue.image_url %>
-<p>
-  <b>Title:</b>
-  <%= @blue.title %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @blue.description %>
-</p>
-
-
-<%= link_to 'Edit', edit_blue_path(@blue) %> |
-<%= link_to 'Back', blues_path %>

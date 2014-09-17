@@ -1,15 +1,10 @@
-<p id="notice"><%= notice %></p>
-<%= image_tag @figure.image_url %>
-<p>
-  <b>Title:</b>
-  <%= @figure.title %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @figure.description %>
-</p>
-
-
-<%= link_to 'Edit', edit_figure_path(@figure) %> |
-<%= link_to 'Back', figures_path %>
+<div class="container">
+  <div class="sixteen columns" id="work_show">
+    <%= image_tag @figure.image_url %>
+    <div id="work_show_description">
+      <h4><%= @figure.title %></h4>
+      <p><%= @figure.description %></p>
+    </div>
+  </div>
+</div>
+ 

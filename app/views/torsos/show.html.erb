@@ -1,16 +1,9 @@
-<p id="notice"><%= notice %></p>
-
-<%= image_tag @torso.image_url %>
-<p>
-  <b>Title:</b>
-  <%= @torso.title %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @torso.description %>
-</p>
-
-
-<%= link_to 'Edit', edit_torso_path(@torso) %> |
-<%= link_to 'Back', torsos_path %>
+<div class="container">
+  <div class="sixteen columns" id="work_show">
+    <%= image_tag @torso.image_url %>
+    <div id="work_show_description">
+      <h4><%= @torso.title %></h4>
+      <p><%= @torso.description %></p>
+    </div>
+  </div>
+</div>
