@@ -2,7 +2,7 @@
   <div class="sixteen columns" id="work">
     <h3>Vessels</h3>
     <% @vessels.each do |vessel| %>
-      <%= image_tag vessel.image_url %>
+      <%= link_to image_tag(vessel.image_url), vessel %>
     <% end %>
   </div>
 </div>

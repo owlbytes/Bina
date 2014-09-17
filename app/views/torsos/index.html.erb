@@ -2,7 +2,7 @@
   <div class="sixteen columns" id="work">
     <h3>Torsos</h3>
     <% @torsos.each do |torso| %>
-      <%= image_tag torso.image_url %>
+      <%= link_to image_tag(torso.image_url), torso %>
     <% end %>
   </div>
 </div>
