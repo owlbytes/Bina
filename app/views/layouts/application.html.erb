@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BinashahartApp</title>
+  <title>Bina's Art</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <%= yield %>
 
 <footer>
 
-<%= link_to "Home Page", homes_path %>
-<%= link_to "Admin Page", admins_path %>
-<% if current_user %>
-  Logged in as <%= current_user.email %>.
-  <%= link_to "Log Out", logout_path %>
-<% else %>
-  <%= link_to "Sign Up", signup_path %> or
-  <%= link_to "Log In", login_path %>
-<% end %>
+<p>&copy;Bina Shah</p>
+<p>Created by <a href="http://www.nehashah.info" target="_blank">Néha Shah</a>
+
 </footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <h1>Listing abouts</h1>
 
-<%= image_tag @about.image_url %>
+
 
 <table>
   <tr>
@@ -14,6 +14,7 @@
 <% @abouts.each do |about| %>
   <tr>
     <td><%= about.subtitle %></td>
+    <%= image_tag about.image_url %>
     <td><%= about.description %></td>
     <td><%= link_to 'Show', about %></td>
     <td><%= link_to 'Edit', edit_about_path(about) %></td>
