@@ -32,3 +32,18 @@
   }
 
 }
+#home{
+  background-image:url('background.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  a, h3{
+    color: white;
+  }
+}
+#home_text{
+  text-align: center;
+}
