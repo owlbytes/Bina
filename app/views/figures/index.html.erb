@@ -1,26 +1,8 @@
-<h1>Listing figures</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @figures.each do |figure| %>
-  <tr>
-    <td><%= figure.title %></td>
-    <td><%= figure.description %></td>
-    <td><%= image_tag figure.image_url %></td>
-    <td><%= link_to 'Show', figure %></td>
-    <td><%= link_to 'Edit', edit_figure_path(figure) %></td>
-    <td><%= link_to 'Destroy', figure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Figure', new_figure_path %>
+<div class="container">
+  <div class="sixteen columns" id="work">
+    <h3>Figures</h3>
+    <% @figures.each do |figure| %>
+      <%= image_tag figure.image_url %>
+    <% end %>
+  </div>
+</div>

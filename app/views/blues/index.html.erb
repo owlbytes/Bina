@@ -1,27 +1,8 @@
-<h1>Listing blues</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @blues.each do |blue| %>
-  <tr>
-    <td><%= blue.title %></td>
-
-    <td><%= blue.description %></td>
-    <td><%= image_tag blue.image_url %></td>
-    <td><%= link_to 'Show', blue %></td>
-    <td><%= link_to 'Edit', edit_blue_path(blue) %></td>
-    <td><%= link_to 'Destroy', blue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Blue', new_blue_path %>
+<div class="container">
+  <div class="sixteen columns" id="work">
+    <h3>Blues</h3>
+    <% @blues.each do |blue| %>
+      <%= image_tag blue.image_url %>
+    <% end %>
+  </div>
+</div>

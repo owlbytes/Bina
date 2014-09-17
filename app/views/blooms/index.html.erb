@@ -1,26 +1,8 @@
-<h1>Listing blooms</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @blooms.each do |bloom| %>
-  <tr>
-    <td><%= bloom.title %></td>
-    <td><%= bloom.description %></td>
-    <td><%= image_tag bloom.image_url %></td>
-    <td><%= link_to 'Show', bloom %></td>
-    <td><%= link_to 'Edit', edit_bloom_path(bloom) %></td>
-    <td><%= link_to 'Destroy', bloom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Bloom', new_bloom_path %>
+<div class="container">
+  <div class="sixteen columns" id="work">
+    <h3>Blooms</h3>
+    <% @blooms.each do |bloom| %>
+      <%= image_tag bloom.image_url %>
+    <% end %>
+  </div>
+</div>

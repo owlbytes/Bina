@@ -1,0 +1,21 @@
+
+#work{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: inline-block;
+    margin: 4px;
+    width: 32%;
+    height: auto;
+    opacity: 1;
+  }
+
+  img:hover {
+    opacity: 0.5;
+  }
+}
