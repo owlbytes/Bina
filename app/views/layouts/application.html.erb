@@ -7,13 +7,41 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container" id="header">
+    <div class="sixteen columns">
+      <h1 id="header">Bina Shah</h1>
+    </div>
+  </div>
 <%= yield %>
-
 <footer>
-
-<p>&copy;Bina Shah</p>
-<p>Created by <a href="http://www.nehashah.info" target="_blank">Néha Shah</a>
-
+  <div class="container">
+    <div class="sixteen columns" id="footie">
+      <br>
+        <%= link_to "Home", homes_path %>
+        |
+        <%= link_to "About", abouts_path %>
+        |
+        <%= link_to "Blooms", blooms_path %>
+        |
+        <%= link_to "Blues", blues_path %>
+        |
+        <%= link_to "Figures", figures_path %>
+        |
+        <%= link_to "Paintings", paintings_path %>
+        |
+        <%= link_to "Torsos", torsos_path %>
+        |
+        <%= link_to "Vessels", vessels_path %>
+      <br>
+      <br>
+      <p>&copy;Bina Shah</p>
+      <p>Created by <a href="http://www.nehashah.info" target="_blank">Néha Shah</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
+
+
+
+

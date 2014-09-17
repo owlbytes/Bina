@@ -1,3 +1,34 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// application layout
+
+#header{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  h1{
+    color: #801515;
+  }
+  
+}
+#footie{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  background-color: #e8e6e8;
+  color: #801515;
+  a {
+    color: #801515;
+  }
+  a:hover {
+    background-color: #801515;
+    color: white
+  }
+
+}
