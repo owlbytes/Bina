@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
-gem 'carrierwave'
+gem "carrierwave", :git => "https://github.com/carrierwaveuploader/carrierwave.git"
+
 
 gem "fog", "~> 1.3.1"
 # Bundle edge Rails instead:
